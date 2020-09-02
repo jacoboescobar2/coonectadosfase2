@@ -1,0 +1,1981 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "object",
+   "title": "The Root Schema",
+   "required": [
+      "cabecera"
+   ],
+   "properties": {
+      "cabecera": {
+         "$id": "#/properties/cabecera",
+         "type": "object",
+         "title": "The Cabecera Schema",
+         "required": [
+            "idMensaje",
+            "idPersona",
+            "timestamp"
+         ],
+         "properties": {
+            "idMensaje": {
+               "$id": "#/properties/cabecera/properties/idMensaje",
+               "type": "string",
+               "title": "The Idmensaje Schema",
+               "examples": [
+                  "AF2eQd_LDEmIbUSPYXmiVRON3Ssr"
+               ],
+               "pattern": "^(.*)$",
+               "minLength": 1,
+               "maxLength": 32
+            },
+            "idPersona": {
+               "$id": "#/properties/cabecera/properties/idPersona",
+               "type": "string",
+               "title": "The Idpersona Schema",
+               "examples": [
+                  "18256"
+               ],
+               "pattern": "^(.*)$",
+               "minLength": 1,
+               "maxLength": 8
+            },
+            "timestamp": {
+               "$id": "#/properties/cabecera/properties/timestamp",
+               "type": "string",
+               "title": "The Timestamp Schema",
+               "examples": [
+                  "20191009202355000"
+               ],
+               "pattern": "^(.*)$",
+               "minLength": 1,
+               "maxLength": 25
+            }
+         }
+      },
+      "general": {
+         "$id": "#/properties/general",
+         "type": "array",
+         "title": "The General Schema",
+         "items": {
+            "$id": "#/properties/general/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "primerApellido",
+               "primerNombre",
+               "genero",
+               "fechaNacimto",
+               "tipoDocumento",
+               "documento",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/general/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/general/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "primerApellido": {
+                  "$id": "#/properties/general/items/properties/primerApellido",
+                  "type": "string",
+                  "title": "The Primerapellido Schema",
+                  "examples": [
+                     "Pacheco"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 50
+               },
+               "segundoApellido": {
+                  "$id": "#/properties/general/items/properties/segundoApellido",
+                  "type": "string",
+                  "title": "The Segundoapellido Schema",
+                  "examples": [
+                     "Bustos"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 50
+               },
+               "primerNombre": {
+                  "$id": "#/properties/general/items/properties/primerNombre",
+                  "type": "string",
+                  "title": "The Primernombre Schema",
+                  "examples": [
+                     "Leidy"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 50
+               },
+               "segundoNombre": {
+                  "$id": "#/properties/general/items/properties/segundoNombre",
+                  "type": "string",
+                  "title": "The Segundonombre Schema",
+                  "examples": [
+                     "Ana"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 50
+               },
+               "genero": {
+                  "$id": "#/properties/general/items/properties/genero",
+                  "type": "string",
+                  "title": "The Genero Schema",
+                  "examples": [
+                     "F"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               },
+               "fechaNacimto": {
+                  "$id": "#/properties/general/items/properties/fechaNacimto",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fechanacimto Schema",
+                  "examples": [
+                     "1987-08-29"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "paisNacimto": {
+                  "$id": "#/properties/general/items/properties/paisNacimto",
+                  "type": "string",
+                  "title": "The Paisnacimto Schema",
+                  "examples": [
+                     "COL"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "deptoNacimto": {
+                  "$id": "#/properties/general/items/properties/deptoNacimto",
+                  "type": "string",
+                  "title": "The Deptonacimto Schema",
+                  "examples": [
+                     "08"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "ciudadNacimto": {
+                  "$id": "#/properties/general/items/properties/ciudadNacimto",
+                  "type": "string",
+                  "title": "The Ciudadnacimto Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 8
+               },
+               "tipoDocumento": {
+                  "$id": "#/properties/general/items/properties/tipoDocumento",
+                  "type": "string",
+                  "title": "The Tipodocumento Schema",
+                  "examples": [
+                     "Cedula Ciudadania"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "documento": {
+                  "$id": "#/properties/general/items/properties/documento",
+                  "type": "string",
+                  "title": "The Documento Schema",
+                  "examples": [
+                     "1129583828"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 20
+               },
+               "paisExpDocto": {
+                  "$id": "#/properties/general/items/properties/paisExpDocto",
+                  "type": "string",
+                  "title": "The Paisexpdocto Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "deptoExpDocto": {
+                  "$id": "#/properties/general/items/properties/deptoExpDocto",
+                  "type": "string",
+                  "title": "The Deptoexpdocto Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "ciudadExpDocto": {
+                  "$id": "#/properties/general/items/properties/ciudadExpDocto",
+                  "type": "string",
+                  "title": "The Ciudadexpdocto Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 8
+               },
+               "tipoSangre": {
+                  "$id": "#/properties/general/items/properties/tipoSangre",
+                  "type": "string",
+                  "title": "The Tiposangre Schema",
+                  "examples": [
+                     "3"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "rhSangre": {
+                  "$id": "#/properties/general/items/properties/rhSangre",
+                  "type": "string",
+                  "title": "The Rhsangre Schema",
+                  "examples": [
+                     "O"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "nacionalidad": {
+                  "$id": "#/properties/general/items/properties/nacionalidad",
+                  "type": "string",
+                  "title": "The Nacionalidad Schema",
+                  "examples": [
+                     "CO"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 4
+               },
+               "regAction": {
+                  "$id": "#/properties/general/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               },
+               "fechaExpDocto": {
+                  "$id": "#/properties/general/items/properties/fechaExpDocto",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The FechaExpDocto Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               }
+            }
+         }
+      },
+      "bancaria": {
+         "$id": "#/properties/bancaria",
+         "type": "array",
+         "title": "The Bancaria Schema",
+         "items": {
+            "$id": "#/properties/bancaria/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecFinInfoBanc",
+               "fecIniInfoBanc",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/bancaria/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/bancaria/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniInfoBanc": {
+                  "$id": "#/properties/bancaria/items/properties/fecIniInfoBanc",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Feciniinfobanc Schema",
+                  "examples": [
+                     "2019-09-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinInfoBanc": {
+                  "$id": "#/properties/bancaria/items/properties/fecFinInfoBanc",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfininfobanc Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "metodoPago": {
+                  "$id": "#/properties/bancaria/items/properties/metodoPago",
+                  "type": "string",
+                  "title": "The Metodopago Schema",
+                  "examples": [
+                     "X"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 1
+               },
+               "numeroCuenta": {
+                  "$id": "#/properties/items/properties/numeroCuenta",
+                  "type": "string",
+                  "title": "The Numerocuenta Schema",
+                  "examples": [
+                     "80102713831"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 62
+               },
+               "tipoCuenta": {
+                  "$id": "#/properties/bancaria/items/properties/tipoCuenta",
+                  "type": "string",
+                  "title": "The TipoCuenta Schema",
+                  "examples": [
+                     "801027112"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 9
+               },
+               "nitBanco": {
+                  "$id": "#/properties/bancaria/items/properties/nitBanco",
+                  "type": "string",
+                  "title": "The Nitbanco Schema",
+                  "examples": [
+                     "001"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 11
+               },
+               "paisBanco": {
+                  "$id": "#/properties/bancaria/items/properties/paisBanco",
+                  "type": "string",
+                  "title": "The Paisbanco Schema",
+                  "examples": [
+                     "CO"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 9
+               },
+               "moneda": {
+                  "$id": "#/properties/bancaria/items/properties/moneda",
+                  "type": "string",
+                  "title": "The Moneda Schema",
+                  "examples": [
+                     "COP"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 3
+               },
+               "formaPago": {
+                  "$id": "#/properties/bancaria/items/properties/formaPago",
+                  "type": "string",
+                  "title": "The FormaPago Schema",
+                  "examples": [
+                     "10"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 3
+               },
+               "regAction": {
+                  "$id": "#/properties/bancaria/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "direccion": {
+         "$id": "#/properties/direccion",
+         "type": "array",
+         "title": "The Direccion Schema",
+         "items": {
+            "$id": "#/properties/direccion/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniDireccion",
+               "fecFinDireccion",
+               "paisDireccion",
+               "deptoDireccion",
+               "ciudadDireccion",
+               "direccion",
+               "tipoDireccion",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/direccion/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "300158"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/direccion/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniDireccion": {
+                  "$id": "#/properties/direccion/items/properties/fecIniDireccion",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The FecIniDireccion Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinDireccion": {
+                  "$id": "#/properties/direccion/items/properties/fecFinDireccion",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The FecFinDireccion Schema",
+                  "examples": [
+                     "2019-10-09"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "paisDireccion": {
+                  "$id": "#/properties/direccion/items/properties/paisDireccion",
+                  "type": "string",
+                  "title": "The Paisdireccion Schema",
+                  "examples": [
+                     "COL"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 4
+               },
+               "deptoDireccion": {
+                  "$id": "#/properties/direccion/items/properties/deptoDireccion",
+                  "type": "string",
+                  "title": "The Deptodireccion Schema",
+                  "examples": [
+                     "12"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 4
+               },
+               "ciudadDireccion": {
+                  "$id": "#/properties/direccion/items/properties/ciudadDireccion",
+                  "type": "string",
+                  "title": "The Ciudaddireccion Schema",
+                  "examples": [
+                     "11"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "direccion": {
+                  "$id": "#/properties/direccion/items/properties/direccion",
+                  "type": "string",
+                  "title": "The Direccion Schema",
+                  "examples": [
+                     "AC"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 254
+               },
+               "tipoDireccion": {
+                  "$id": "#/properties/direccion/items/properties/tipoDireccion",
+                  "type": "string",
+                  "title": "The Tipodireccion Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               },
+               "regAction": {
+                  "$id": "#/properties/direccion/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "telefono": {
+         "$id": "#/properties/telefono",
+         "type": "array",
+         "title": "The Telefono Schema",
+         "items": {
+            "$id": "#/properties/telefono/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniTelefono",
+               "fecFinTelefono",
+               "tipoLinea",
+               "telefono",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/telefono/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/telefono/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniTelefono": {
+                  "$id": "#/properties/telefono/items/properties/fecIniTelefono",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinitelefono Schema",
+                  "examples": [
+                     "2006-11-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinTelefono": {
+                  "$id": "#/properties/telefono/items/properties/fecFinTelefono",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfintelefono Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "tipoLinea": {
+                  "$id": "#/properties/telefono/items/properties/tipoLinea",
+                  "type": "string",
+                  "title": "The Tipolinea Schema",
+                  "examples": [
+                     "C"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 3
+               },
+               "telefono": {
+                  "$id": "#/properties/telefono/items/properties/telefono",
+                  "type": "string",
+                  "title": "The Telefono Schema",
+                  "examples": [
+                     "3017064340"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 11
+               },
+               "regAction": {
+                  "$id": "#/properties/telefono/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "correo": {
+         "$id": "#/properties/correo",
+         "type": "array",
+         "title": "The Correo Schema",
+         "items": {
+            "$id": "#/properties/correo/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniCorreo",
+               "fecFinCorreo",
+               "email",
+               "tipoCorreo",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/correo/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/correo/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniCorreo": {
+                  "$id": "#/properties/correo/items/properties/fecIniCorreo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinicorreo Schema",
+                  "examples": [
+                     "2006-11-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinCorreo": {
+                  "$id": "#/properties/correo/items/properties/fecFinCorreo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfincorreo Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "email": {
+                  "$id": "#/properties/correo/items/properties/email",
+                  "type": "string",
+                  "format": "email",
+                  "title": "The Email Schema",
+                  "examples": [
+                     "sincorreo@coomeva.com.co"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 254
+               },
+               "tipoCorreo": {
+                  "$id": "#/properties/correo/items/properties/tipoCorreo",
+                  "type": "string",
+                  "title": "The Tipocorreo Schema",
+                  "examples": [
+                     "2"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               },
+               "regAction": {
+                  "$id": "#/properties/correo/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "periodo": {
+         "$id": "#/properties/periodo",
+         "type": "array",
+         "title": "The Periodo Schema",
+         "items": {
+            "$id": "#/properties/periodo/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/periodo/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/periodo/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniPeriodo": {
+                  "$id": "#/properties/periodo/items/properties/fecIniPeriodo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Feciniperiodo Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "fecFinPeriodo": {
+                  "$id": "#/properties/periodo/items/properties/fecFinPeriodo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinperiodo Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "fecFinReal": {
+                  "$id": "#/properties/periodo/items/properties/fecFinReal",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinreal Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "fecIniRegAnt": {
+                  "$id": "#/properties/periodo/items/properties/fecIniRegAnt",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Feciniregant Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "motivoFin": {
+                  "$id": "#/properties/periodo/items/properties/motivoFin",
+                  "type": "string",
+                  "title": "The Motivofin Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 3
+               },
+               "fechaAntiguedad": {
+                  "$id": "#/properties/periodo/items/properties/fechaAntiguedad",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fechaantiguedad Schema",
+                  "examples": [
+                     "2009-04-20"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "fechaIngGECC": {
+                  "$id": "#/properties/periodo/items/properties/fechaIngGECC",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fechainggecc Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "indAsociado": {
+                  "$id": "#/properties/periodo/items/properties/indAsociado",
+                  "type": "string",
+                  "title": "The Indasociado Schema",
+                  "examples": [
+                     "EA01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 32
+               },
+               "regAction": {
+                  "$id": "#/properties/periodo/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 32
+               },
+               "motivoInicio": {
+                  "$id": "#/properties/periodo/items/properties/motivoInicio",
+                  "type": "string",
+                  "title": "The MotivoInicio Schema",
+                  "examples": [
+                     "23"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 3
+               }
+            }
+         }
+      },
+      "empresa": {
+         "$id": "#/properties/empresa",
+         "type": "array",
+         "title": "The Empresa Schema",
+         "items": {
+            "$id": "#/properties/empresa/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecFinEmpresa",
+               "fecIniEmpresa",
+               "idEmpresa",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/empresa/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/empresa/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniEmpresa": {
+                  "$id": "#/properties/empresa/items/properties/fecIniEmpresa",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Feciniempresa Schema",
+                  "examples": [
+                     "2019-09-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinEmpresa": {
+                  "$id": "#/properties/empresa/items/properties/fecFinEmpresa",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinempresa Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idEmpresa": {
+                  "$id": "#/properties/empresa/items/properties/idEmpresa",
+                  "type": "string",
+                  "title": "The Idempresa Schema",
+                  "examples": [
+                     "012"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 3
+               },
+               "regAction": {
+                  "$id": "#/properties/empresa/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "tipoEmpleado": {
+         "$id": "#/properties/tipoEmpleado",
+         "type": "array",
+         "title": "The Tipoempleado Schema",
+         "items": {
+            "$id": "#/properties/tipoEmpleado/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniTipoEmpl",
+               "fecFinTipoEmpl",
+               "tipoEmpleado",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/tipoEmpleado/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/tipoEmpleado/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniTipoEmpl": {
+                  "$id": "#/properties/tipoEmpleado/items/properties/fecIniTipoEmpl",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinitipoempl Schema",
+                  "examples": [
+                     "2019-09-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinTipoEmpl": {
+                  "$id": "#/properties/tipoEmpleado/items/properties/fecFinTipoEmpl",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The FecFinTipoEmpl Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "tipoEmpleado": {
+                  "$id": "#/properties/tipoEmpleado/items/properties/tipoEmpleado",
+                  "type": "string",
+                  "title": "The Tipoempleado Schema",
+                  "examples": [
+                     "003"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 3
+               },
+               "regAction": {
+                  "$id": "#/properties/tipoEmpleado/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "frecuenciaPago": {
+         "$id": "#/properties/frecuenciaPago",
+         "type": "array",
+         "title": "The Frecuenciapago Schema",
+         "items": {
+            "$id": "#/properties/frecuenciaPago/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniFrecPago",
+               "fecFinFrecPago",
+               "idFrecPago",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/frecuenciaPago/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/frecuenciaPago/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20190911222548"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniFrecPago": {
+                  "$id": "#/properties/frecuenciaPago/items/properties/fecIniFrecPago",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinifrecpago Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinFrecPago": {
+                  "$id": "#/properties/frecuenciaPago/items/properties/fecFinFrecPago",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinfrecpago Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idFrecPago": {
+                  "$id": "#/properties/frecuenciaPago/items/properties/idFrecPago",
+                  "type": "string",
+                  "title": "The Idfrecpago Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 3
+               },
+               "regAction": {
+                  "$id": "#/properties/frecuenciaPago/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "a"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "tiempoTeorico": {
+         "$id": "#/properties/tiempoTeorico",
+         "type": "array",
+         "title": "The Tiempoteorico Schema",
+         "items": {
+            "$id": "#/properties/tiempoTeorico/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniTiempo",
+               "fecFinTiempo",
+               "idModeloRef",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/tiempoTeorico/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/tiempoTeorico/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniTiempo": {
+                  "$id": "#/properties/tiempoTeorico/items/properties/fecIniTiempo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinitiempo Schema",
+                  "examples": [
+                     "2019-09-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinTiempo": {
+                  "$id": "#/properties/tiempoTeorico/items/properties/fecFinTiempo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfintiempo Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idModeloRef": {
+                  "$id": "#/properties/tiempoTeorico/items/properties/idModeloRef",
+                  "type": "string",
+                  "title": "The Idmodeloref Schema",
+                  "examples": [
+                     "ADMI"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 12
+               },
+               "regAction": {
+                  "$id": "#/properties/tiempoTeorico/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "entidades": {
+         "$id": "#/properties/entidades",
+         "type": "array",
+         "title": "The Entidades Schema",
+         "items": {
+            "$id": "#/properties/entidades/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniEntidades",
+               "fecFinEntidades",
+               "idEPS",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/entidades/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/entidades/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20190911222548"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniEntidades": {
+                  "$id": "#/properties/entidades/items/properties/fecIniEntidades",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinientidades Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinEntidades": {
+                  "$id": "#/properties/entidades/items/properties/fecFinEntidades",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinentidades Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idEPS": {
+                  "$id": "#/properties/entidades/items/properties/idEPS",
+                  "type": "string",
+                  "title": "The Ideps Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 11
+               },
+               "idAFP": {
+                  "$id": "#/properties/entidades/items/properties/idAFP",
+                  "type": "string",
+                  "title": "The Idafp Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 11
+               },
+               "idFCES": {
+                  "$id": "#/properties/entidades/items/properties/idFCES",
+                  "type": "string",
+                  "title": "The Idfces Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 11
+               },
+               "idFvolOblCF": {
+                  "$id": "#/properties/entidades/items/properties/idFvolOblCF",
+                  "type": "string",
+                  "title": "The Idfvoloblcf Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 11
+               },
+               "idFvolCF": {
+                  "$id": "#/properties/entidades/items/properties/idFvolCF",
+                  "type": "string",
+                  "title": "The Idfvolcf Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 11
+               },
+               "regAction": {
+                  "$id": "#/properties/entidades/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "a"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "tipoContrato": {
+         "$id": "#/properties/tipoContrato",
+         "type": "array",
+         "title": "The Tipocontrato Schema",
+         "items": {
+            "$id": "#/properties/tipoContrato/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniContrato",
+               "fecFinContrato",
+               "tipoContrato",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/tipoContrato/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/tipoContrato/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniContrato": {
+                  "$id": "#/properties/tipoContrato/items/properties/fecIniContrato",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinicontrato Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinContrato": {
+                  "$id": "#/properties/tipoContrato/items/properties/fecFinContrato",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfincontrato Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "tipoContrato": {
+                  "$id": "#/properties/tipoContrato/items/properties/tipoContrato",
+                  "type": "string",
+                  "title": "The Tipocontrato Schema",
+                  "examples": [
+                     "01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "finPerPrueba": {
+                  "$id": "#/properties/tipoContrato/items/properties/finPerPrueba",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Finperprueba Schema",
+                  "examples": [
+                     "4000-01-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 10
+               },
+               "regAction": {
+                  "$id": "#/properties/tipoContrato/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "rol": {
+         "$id": "#/properties/rol",
+         "type": "array",
+         "title": "The Rol Schema",
+         "items": {
+            "$id": "#/properties/rol/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniRol",
+               "fecFinRol",
+               "centroCostoRol",
+               "idPosicion",
+               "idLugarTrabajo",
+               "idPuesto",
+               "idUnidOrg",
+               "descripcionRol",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/rol/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "18256"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/rol/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20191009202355000"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniRol": {
+                  "$id": "#/properties/rol/items/properties/fecIniRol",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinirol Schema",
+                  "examples": [
+                     "2019-09-01"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinRol": {
+                  "$id": "#/properties/rol/items/properties/fecFinRol",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinrol Schema",
+                  "examples": [
+                     "9999-12-31"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "centroCostoRol": {
+                  "$id": "#/properties/rol/items/properties/centroCostoRol",
+                  "type": "string",
+                  "title": "The Centrocostorol Schema",
+                  "examples": [
+                     "367036"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idPosicion": {
+                  "$id": "#/properties/rol/items/properties/idPosicion",
+                  "type": "string",
+                  "title": "The Idposicion Schema",
+                  "examples": [
+                     "002294"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idLugarTrabajo": {
+                  "$id": "#/properties/rol/items/properties/idLugarTrabajo",
+                  "type": "string",
+                  "title": "The Idlugartrabajo Schema",
+                  "examples": [
+                     "T000509"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "idPuesto": {
+                  "$id": "#/properties/rol/items/properties/idPuesto",
+                  "type": "string",
+                  "title": "The Idpuesto Schema",
+                  "examples": [
+                     "J0000957"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "idUnidOrg": {
+                  "$id": "#/properties/rol/items/properties/idUnidOrg",
+                  "type": "string",
+                  "title": "The Idunidorg Schema",
+                  "examples": [
+                     "ASESOR VENTAS BCO"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "descripcionRol": {
+                  "$id": "#/properties/rol/items/properties/descripcionRol",
+                  "type": "string",
+                  "title": "The Descripcionrol Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 254
+               },
+               "evento": {
+                  "$id": "#/properties/rol/items/properties/evento",
+                  "type": "string",
+                  "title": "The Evento Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 3
+               },
+               "regAction": {
+                  "$id": "#/properties/rol/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "I"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               },
+               "idSucursal": {
+                  "$id": "#/properties/rol/items/properties/idSucursal",
+                  "type": "string",
+                  "title": "The IdSucursal Schema",
+                  "examples": [
+                     ""
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 9
+               }
+            }
+         }
+      },
+      "salario": {
+         "$id": "#/properties/salario",
+         "type": "array",
+         "title": "The Salario Schema",
+         "items": {
+            "$id": "#/properties/salario/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniSueldo",
+               "fecFinSueldo",
+               "sueldoRol",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/salario/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/salario/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20190911222548"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniSueldo": {
+                  "$id": "#/properties/salario/items/properties/fecIniSueldo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinisueldo Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinSueldo": {
+                  "$id": "#/properties/salario/items/properties/fecFinSueldo",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinsueldo Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "sueldoRol": {
+                  "$id": "#/properties/salario/items/properties/sueldoRol",
+                  "type": "integer",
+                  "title": "The Sueldorol Schema",
+                  "examples": [
+                     20000
+                  ]
+               },
+               "eventoSueldo": {
+                  "$id": "#/properties/salario/items/properties/eventoSueldo",
+                  "type": "string",
+                  "title": "The Eventosueldo Schema",
+                  "examples": [
+                     "abc"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 0,
+                  "maxLength": 3
+               },
+               "regAction": {
+                  "$id": "#/properties/salario/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "a"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "cenCosAlt": {
+         "$id": "#/properties/cenCosAlt",
+         "type": "array",
+         "title": "The Cencosalt Schema",
+         "items": {
+            "$id": "#/properties/cenCosAlt/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniCencost",
+               "fecFinCencost",
+               "idCentroCosto",
+               "porcCencost",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/cenCosAlt/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/cenCosAlt/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20190911222548"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniCencost": {
+                  "$id": "#/properties/cenCosAlt/items/properties/fecIniCencost",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecinicencost Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinCencost": {
+                  "$id": "#/properties/cenCosAlt/items/properties/fecFinCencost",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfincencost Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "idCentroCosto": {
+                  "$id": "#/properties/cenCosAlt/items/properties/idCentroCosto",
+                  "type": "string",
+                  "title": "The Idcentrocosto Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "porcCencost": {
+                  "$id": "#/properties/cenCosAlt/items/properties/porcCencost",
+                  "type": "number",
+                  "title": "The Porccencost Schema",
+                  "examples": [
+                     0.7
+                  ]
+               },
+               "regAction": {
+                  "$id": "#/properties/cenCosAlt/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "a"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      },
+      "prorrContrato": {
+         "$id": "#/properties/prorrContrato",
+         "type": "array",
+         "title": "The Prorrcontrato Schema",
+         "items": {
+            "$id": "#/properties/prorrContrato/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "idPersona",
+               "timestamp",
+               "fecIniProrroga",
+               "fecFinProrroga",
+               "regAction"
+            ],
+            "properties": {
+               "idPersona": {
+                  "$id": "#/properties/prorrContrato/items/properties/idPersona",
+                  "type": "string",
+                  "title": "The Idpersona Schema",
+                  "examples": [
+                     "1"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 8
+               },
+               "timestamp": {
+                  "$id": "#/properties/prorrContrato/items/properties/timestamp",
+                  "type": "string",
+                  "title": "The Timestamp Schema",
+                  "examples": [
+                     "20190911222548"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 25
+               },
+               "fecIniProrroga": {
+                  "$id": "#/properties/prorrContrato/items/properties/fecIniProrroga",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Feciniprorroga Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "fecFinProrroga": {
+                  "$id": "#/properties/prorrContrato/items/properties/fecFinProrroga",
+                  "type": "string",
+                  "format": "date-custom",
+                  "title": "The Fecfinprorroga Schema",
+                  "examples": [
+                     "2019-09-17"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 10
+               },
+               "regAction": {
+                  "$id": "#/properties/prorrContrato/items/properties/regAction",
+                  "type": "string",
+                  "title": "The Regaction Schema",
+                  "examples": [
+                     "a"
+                  ],
+                  "pattern": "^(.*)$",
+                  "minLength": 1,
+                  "maxLength": 1
+               }
+            }
+         }
+      }
+   }
+}

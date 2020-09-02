@@ -1,0 +1,236 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "array",
+   "title": "The Root Schema",
+   "items": {
+      "$id": "#items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+         "idPosicion",
+         "timestamp",
+         "nombrePosicion",
+         "fecIniPosicion",
+         "fecFinPosicion",
+         "puestoPosicion",
+         "lugTrabPosicion",
+         "unidOrgPosicion",
+         "nombreUnidOrg",
+         "empresa",
+         "idNegocio",
+         "nombreNegocio",
+         "idRegional",
+         "claveAdmtva",
+         "regAction"
+      ],
+      "properties": {
+         "idPosicion": {
+            "$id": "#items/properties/idPosicion",
+            "type": "string",
+            "title": "The Idposicion Schema",
+            "examples": [
+               "100036"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "timestamp": {
+            "$id": "#items/properties/timestamp",
+            "type": "string",
+            "title": "The Timestamp Schema",
+            "examples": [
+               "20191008164712353"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 25
+         },
+         "nombrePosicion": {
+            "$id": "#items/properties/nombrePosicion",
+            "type": "string",
+            "title": "The Nombreposicion Schema",
+            "examples": [
+               "Gestion Humana Coomeva Cooperativa"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 62
+         },
+         "fecIniPosicion": {
+            "$id": "#items/properties/fecIniPosicion",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Feciniposicion Schema",
+            "examples": [
+               "2019-09-01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "fecFinPosicion": {
+            "$id": "#items/properties/fecFinPosicion",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecfinposicion Schema",
+            "examples": [
+               "2019-09-30"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "puestoPosicion": {
+            "$id": "#items/properties/puestoPosicion",
+            "type": "string",
+            "title": "The Puestoposicion Schema",
+            "examples": [
+               "J0001048"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "lugTrabPosicion": {
+            "$id": "#items/properties/lugTrabPosicion",
+            "type": "string",
+            "title": "The Lugtrabposicion Schema",
+            "examples": [
+               "T000149"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "unidOrgPosicion": {
+            "$id": "#items/properties/unidOrgPosicion",
+            "type": "string",
+            "title": "The Unidorgposicion Schema",
+            "examples": [
+               "AR01335"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "nombreUnidOrg": {
+            "$id": "#items/properties/nombreUnidOrg",
+            "type": "string",
+            "title": "The Nombreunidorg Schema",
+            "examples": [
+               "Administrativo Mp"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 62
+         },
+         "empresa": {
+            "$id": "#items/properties/empresa",
+            "type": "string",
+            "title": "The Empresa Schema",
+            "examples": [
+               "033"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 3
+         },
+         "idNegocio": {
+            "$id": "#items/properties/idNegocio",
+            "type": "string",
+            "title": "The Idnegocio Schema",
+            "examples": [
+               "0001"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "nombreNegocio": {
+            "$id": "#items/properties/nombreNegocio",
+            "type": "string",
+            "title": "The Nombrenegocio Schema",
+            "examples": [
+               "Administrativo"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 60
+         },
+         "idRegional": {
+            "$id": "#items/properties/idRegional",
+            "type": "string",
+            "title": "The Idregional Schema",
+            "examples": [
+               "0008"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "claveAdmtva": {
+            "$id": "#items/properties/claveAdmtva",
+            "type": "integer",
+            "title": "The Claveadmtva Schema",
+            "examples": [
+               1
+            ]
+         },
+         "idCentroCosto": {
+            "$id": "#items/properties/idCentroCosto",
+            "type": "string",
+            "title": "The Idcentrocosto Schema",
+            "examples": [
+               "5612605"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 0,
+            "maxLength": 10
+         },
+         "numeroHoras": {
+            "$id": "#items/properties/numeroHoras",
+            "type": "integer",
+            "title": "The Numerohoras Schema",
+            "examples": [
+               48
+            ]
+         },
+         "claseRiesgo": {
+            "$id": "#items/properties/claseRiesgo",
+            "type": "string",
+            "title": "The Claseriesgo Schema",
+            "examples": [
+               "RL01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 0,
+            "maxLength": 1
+         },
+         "regAction": {
+            "$id": "#items/properties/regAction",
+            "type": "string",
+            "title": "The Regaction Schema",
+            "examples": [
+               "A"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 1
+         },
+         "idPosicionJefe": {
+            "$id": "#items/properties/idPosicionJefe",
+            "type": "string",
+            "title": "The IdPosicionJefe Schema",
+            "examples": [
+               "A"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 0,
+            "maxLength": 10
+         }
+      }
+   }
+}

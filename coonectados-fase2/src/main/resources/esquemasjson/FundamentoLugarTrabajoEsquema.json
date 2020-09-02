@@ -1,0 +1,137 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "array",
+   "title": "The Root Schema",
+   "items": {
+      "$id": "#items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+         "idLugarTrabajo",
+         "timestamp",
+         "nombreLugarTrabajo",
+         "fecIniLugarTrabajo",
+         "fecFinLugarTrabajo",
+         "paisLugarTrabajo",
+         "deptoLugarTrabajo",
+         "ciudadLugarTrabajo",
+         "regAction"
+      ],
+      "properties": {
+         "idLugarTrabajo": {
+            "$id": "#items/properties/idLugarTrabajo",
+            "type": "string",
+            "title": "The Idlugartrabajo Schema",
+            "examples": [
+               "T1000105"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "timestamp": {
+            "$id": "#items/properties/timestamp",
+            "type": "string",
+            "title": "The Timestamp Schema",
+            "examples": [
+               "20191008164712353"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 25
+         },
+         "nombreLugarTrabajo": {
+            "$id": "#items/properties/nombreLugarTrabajo",
+            "type": "string",
+            "title": "The Nombrelugartrabajo Schema",
+            "examples": [
+               "COOMEVA - TEST"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 62
+         },
+         "fecIniLugarTrabajo": {
+            "$id": "#items/properties/fecIniLugarTrabajo",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecinilugartrabajo Schema",
+            "examples": [
+               "2019-09-01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "fecFinLugarTrabajo": {
+            "$id": "#items/properties/fecFinLugarTrabajo",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecfinlugartrabajo Schema",
+            "examples": [
+               "9999-12-31"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "direccionLugarTrabajo": {
+            "$id": "#items/properties/direccionLugarTrabajo",
+            "type": "string",
+            "title": "The Direccionlugartrabajo Schema",
+            "examples": [
+               "Calle 13 # 57 50"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 0,
+            "maxLength": 40
+         },
+         "paisLugarTrabajo": {
+            "$id": "#items/properties/paisLugarTrabajo",
+            "type": "string",
+            "title": "The Paislugartrabajo Schema",
+            "examples": [
+               "COL"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 4
+         },
+         "deptoLugarTrabajo": {
+            "$id": "#items/properties/deptoLugarTrabajo",
+            "type": "string",
+            "title": "The Deptolugartrabajo Schema",
+            "examples": [
+               "76"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 4
+         },
+         "ciudadLugarTrabajo": {
+            "$id": "#items/properties/ciudadLugarTrabajo",
+            "type": "string",
+            "title": "The Ciudadlugartrabajo Schema",
+            "examples": [
+               "1"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "regAction": {
+            "$id": "#items/properties/regAction",
+            "type": "string",
+            "title": "The Regaction Schema",
+            "examples": [
+               "A"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 1
+         }
+      }
+   }
+}

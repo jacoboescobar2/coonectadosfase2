@@ -1,0 +1,35 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "object",
+   "title": "The Root Schema",
+   "required": [
+      "idMensaje",
+      "timestamp"
+   ],
+   "properties": {
+      "idMensaje": {
+         "$id": "#/properties/idMensaje",
+         "type": "string",
+         "title": "The Idmensaje Schema",
+         "examples": [
+            "AF2cvY2Wzhf6-kHCUxx0md_6bXXU"
+         ],
+         "pattern": "^(.*)$",
+         "minLength": 1,
+         "maxLength": 32
+      },
+      "timestamp": {
+         "$id": "#/properties/timestamp",
+         "type": "string",
+         "title": "The Timestamp Schema",
+         "examples": [
+            "20191008164712353"
+         ],
+         "pattern": "^(.*)$",
+         "minLength": 1,
+         "maxLength": 25
+      }
+   }
+}
