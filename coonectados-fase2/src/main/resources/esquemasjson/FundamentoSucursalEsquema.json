@@ -1,0 +1,150 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "array",
+   "title": "The Root Schema",
+   "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+         "idSucursal",
+         "timestamp",
+         "nombreSucursal",
+         "fecIniSucursal",
+         "fecFinSucursal",
+         "empresaSucursal",
+         "cajaCompSucursal",
+         "paisSucursal",
+         "deptoSucursal",
+         "ciudadSucursal",
+         "regAction"
+      ],
+      "properties": {
+         "idSucursal": {
+            "$id": "#/items/properties/idSucursal",
+            "type": "string",
+            "title": "The Idsucursal Schema",
+            "examples": [
+               "1006"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 9
+         },
+         "timestamp": {
+            "$id": "#/items/properties/timestamp",
+            "type": "string",
+            "title": "The Timestamp Schema",
+            "examples": [
+               "20191008164712353"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 25
+         },
+         "nombreSucursal": {
+            "$id": "#/items/properties/nombreSucursal",
+            "type": "string",
+            "title": "The Nombresucursal Schema",
+            "examples": [
+               "COOMEVA -TEST"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 99
+         },
+         "fecIniSucursal": {
+            "$id": "#/items/properties/fecIniSucursal",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecinisucursal Schema",
+            "examples": [
+               "2019-09-01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "fecFinSucursal": {
+            "$id": "#/items/properties/fecFinSucursal",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecfinsucursal Schema",
+            "examples": [
+               "9999-12-31"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "empresaSucursal": {
+            "$id": "#/items/properties/empresaSucursal",
+            "type": "string",
+            "title": "The Empresasucursal Schema",
+            "examples": [
+               "999"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 3
+         },
+         "cajaCompSucursal": {
+            "$id": "#/items/properties/cajaCompSucursal",
+            "type": "string",
+            "title": "The Cajacompsucursal Schema",
+            "examples": [
+               "1561775"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 11
+         },
+         "paisSucursal": {
+            "$id": "#/items/properties/paisSucursal",
+            "type": "string",
+            "title": "The Paissucursal Schema",
+            "examples": [
+               "47"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 4
+         },
+         "deptoSucursal": {
+            "$id": "#/items/properties/deptoSucursal",
+            "type": "string",
+            "title": "The Deptosucursal Schema",
+            "examples": [
+               "1560166"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 4
+         },
+         "ciudadSucursal": {
+            "$id": "#/items/properties/ciudadSucursal",
+            "type": "string",
+            "title": "The Ciudadsucursal Schema",
+            "examples": [
+               "1560322"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "regAction": {
+            "$id": "#/items/properties/regAction",
+            "type": "string",
+            "title": "The Regaction Schema",
+            "examples": [
+               "A"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 1
+         }
+      }
+   }
+}

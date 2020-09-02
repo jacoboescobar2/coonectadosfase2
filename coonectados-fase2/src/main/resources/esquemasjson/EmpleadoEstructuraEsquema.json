@@ -1,0 +1,97 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "object",
+   "title": "The Root Schema",
+   "required": [
+      "empleado"
+   ],
+   "properties": {
+      "empleado": {
+         "$id": "#/properties/empleado",
+         "type": "array",
+         "title": "The Empleado Schema",
+         "items": {
+            "$id": "#/properties/empleado/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "required": [
+               "cabecera"
+            ],
+            "properties": {
+               "cabecera": {
+                  "$id": "#/properties/empleado/items/properties/cabecera",
+                  "type": "object",
+                  "title": "The Cabecera Schema"
+               },
+               "general": {
+                  "$id": "#/properties/empleado/items/properties/general",
+                  "type": "array",
+                  "title": "The General Schema"
+               },
+               "bancaria": {
+                  "$id": "#/properties/empleado/items/properties/bancaria",
+                  "type": "array",
+                  "title": "The Bancaria Schema"
+               },
+               "telefono": {
+                  "$id": "#/properties/empleado/items/properties/telefono",
+                  "type": "array",
+                  "title": "The Telefono Schema"
+               },
+               "correo": {
+                  "$id": "#/properties/empleado/items/properties/correo",
+                  "type": "array",
+                  "title": "The Correo Schema"
+               },
+               "periodo": {
+                  "$id": "#/properties/empleado/items/properties/periodo",
+                  "type": "array",
+                  "title": "The Periodo Schema"
+               },
+               "empresa": {
+                  "$id": "#/properties/empleado/items/properties/empresa",
+                  "type": "array",
+                  "title": "The Empresa Schema"
+               },
+               "tipoEmpleado": {
+                  "$id": "#/properties/empleado/items/properties/tipoEmpleado",
+                  "type": "array",
+                  "title": "The Tipoempleado Schema"
+               },
+               "tiempoTeorico": {
+                  "$id": "#/properties/empleado/items/properties/tiempoTeorico",
+                  "type": "array",
+                  "title": "The Tiempoteorico Schema"
+               },
+               "tipoContrato": {
+                  "$id": "#/properties/empleado/items/properties/tipoContrato",
+                  "type": "array",
+                  "title": "The Tipocontrato Schema"
+               },
+               "rol": {
+                  "$id": "#/properties/empleado/items/properties/rol",
+                  "type": "array",
+                  "title": "The Rol Schema"
+               },
+               "salario": {
+                  "$id": "#/properties/empleado/items/properties/salario",
+                  "type": "array",
+                  "title": "The Salario Schema"
+               },
+               "cenCosAlt": {
+                  "$id": "#/properties/empleado/items/properties/cenCosAlt",
+                  "type": "array",
+                  "title": "The Cencosalt Schema"
+               },
+               "prorrContrato": {
+                  "$id": "#/properties/empleado/items/properties/prorrContrato",
+                  "type": "array",
+                  "title": "The Prorrcontrato Schema"
+               }
+            }
+         }
+      }
+   }
+}

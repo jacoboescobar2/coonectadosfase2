@@ -1,0 +1,47 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "object",
+   "title": "The Root Schema",
+   "required": [
+      "fundamento"
+   ],
+   "properties": {
+      "fundamento": {
+         "$id": "#/properties/fundamento",
+         "type": "object",
+         "title": "The Fundamento Schema",
+         "required": [
+            "cabecera"
+         ],
+         "properties": {
+            "cabecera": {
+               "$id": "#/properties/fundamento/properties/cabecera",
+               "type": "object",
+               "title": "The Cabecera Schema"
+            },
+            "lugarTrabajo": {
+               "$id": "#/properties/fundamento/properties/lugarTrabajo",
+               "type": "array",
+               "title": "The Lugartrabajo Schema"
+            },
+            "sucursal": {
+               "$id": "#/properties/fundamento/properties/sucursal",
+               "type": "array",
+               "title": "The Sucursal Schema"
+            },
+            "posicion": {
+               "$id": "#/properties/fundamento/properties/posicion",
+               "type": "array",
+               "title": "The Posicion Schema"
+            },
+            "puesto": {
+               "$id": "#/properties/fundamento/properties/puesto",
+               "type": "array",
+               "title": "The Puesto Schema"
+            }
+         }
+      }
+   }
+}

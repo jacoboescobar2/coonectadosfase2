@@ -1,0 +1,112 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "array",
+   "title": "The Root Schema",
+   "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "The Items Schema",
+      "required": [
+         "idPuesto",
+         "timestamp",
+         "nombrePuesto",
+         "fecIniPuesto",
+         "fecFinPuesto",
+         "regAction"
+      ],
+      "properties": {
+         "idPuesto": {
+            "$id": "#/items/properties/idPuesto",
+            "type": "string",
+            "title": "The Idpuesto Schema",
+            "examples": [
+               "J0005371"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 8
+         },
+         "timestamp": {
+            "$id": "#/items/properties/timestamp",
+            "type": "string",
+            "title": "The Timestamp Schema",
+            "examples": [
+               "20191008164712353"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 25
+         },
+         "nombrePuesto": {
+            "$id": "#/items/properties/nombrePuesto",
+            "type": "string",
+            "title": "The Nombrepuesto Schema",
+            "examples": [
+               "ASISTENTE TALENTO Y CULTURA UCO"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 62
+         },
+         "fecIniPuesto": {
+            "$id": "#/items/properties/fecIniPuesto",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecinipuesto Schema",
+            "examples": [
+               "1900-01-01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "fecFinPuesto": {
+            "$id": "#/items/properties/fecFinPuesto",
+            "type": "string",
+            "format": "date-custom",
+            "title": "The Fecfinpuesto Schema",
+            "examples": [
+               "9999-12-31"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 10
+         },
+         "marcaVariable": {
+            "$id": "#/items/properties/marcaVariable",
+            "type": "string",
+            "title": "The Marcavariable Schema",
+            "examples": [
+               "CPV01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 0,
+            "maxLength": 254
+         },
+         "claseRiesgo": {
+            "$id": "#/items/properties/claseRiesgo",
+            "type": "string",
+            "title": "The Claseriesgo Schema",
+            "examples": [
+               "RL01"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 0,
+            "maxLength": 3
+         },
+         "regAction": {
+            "$id": "#/items/properties/regAction",
+            "type": "string",
+            "title": "The Regaction Schema",
+            "examples": [
+               "A"
+            ],
+            "pattern": "^(.*)$",
+            "minLength": 1,
+            "maxLength": 1
+         }
+      }
+   }
+}
