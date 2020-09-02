@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fasterxml.jackson.databind.JsonNode;
+
 import co.coomeva.coonectados.servicios.IValorAsociado;
 
 @RestController
@@ -21,8 +23,10 @@ public class ValorAsociadoController {
 	@RequestMapping(method = RequestMethod.GET, path = "valorAsociado")
 	public @ResponseBody Map<String, Object> consultarValores(@RequestParam ("tipoDocumento") String tipoDocumento, @RequestParam("identificacion") String identificacion) throws Exception {
 	
-		System.out.print("tipoDocumento "+tipoDocumento+"\n");
-		System.out.print("identificacion "+identificacion);
+		//System.out.print("tipoDocumento "+tipoDocumento+"\n");
+		//System.out.print("identificacion "+identificacion);
+	
+		
 		return valorAsociado.consultarValoresAsociado(tipoDocumento, identificacion);
 	}
 

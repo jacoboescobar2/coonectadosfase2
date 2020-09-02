@@ -41,6 +41,8 @@ public class ValorAsociadoImpl implements IValorAsociado {
 			voValorAsociado.setFechaRegistro(formattedDate);		
 			
 			loadAsociado.put("Asociado", voValorAsociado);		
+			
+			LOGGER.info("Consulta del asociado Exitosa");
 		
 		return loadAsociado;
 	}
