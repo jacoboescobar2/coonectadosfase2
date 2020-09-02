@@ -5,6 +5,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
 import co.coomeva.coonectados.modelos.ValorAsociadoVo;
@@ -12,6 +13,8 @@ import co.coomeva.coonectados.modelos.ValorAsociadoVo;
 @Service
 public class ValorAsociadoImpl implements IValorAsociado {
 
+	private final static Logger LOGGER = Logger.getLogger(ValorAsociadoImpl.class);
+	
 	@Override
 	public Map<String, Object> consultarValoresAsociado(String tipoDocumento, String identificacion) throws Exception {
 		// TODO Auto-generated method stub
