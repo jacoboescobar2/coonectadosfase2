@@ -1,2 +1,16 @@
 2020-09-02 15:53:35,236 INFO  co.coomeva.coonectados.servicios.ValorAsociadoImpl - Consulta del asociado Exitosa
 2020-09-02 15:54:32,114 INFO  co.coomeva.coonectados.servicios.ValorAsociadoImpl - Consulta del asociado Exitosa
+2020-09-02 16:54:38,979 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 16:56:55,652 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 17:00:27,979 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 17:18:42,262 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 17:54:44,059 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 17:55:11,731 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 18:02:35,286 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
+2020-09-02 18:02:41,555 INFO  co.coomeva.coonectados.servicios.PrepagadaLiquidacionNuevaImpl - Liquidacion exitosa!!
+2020-09-02 18:18:17,426 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
+2020-09-02 18:18:53,704 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
+2020-09-02 18:22:23,392 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
+2020-09-02 18:23:25,011 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
+2020-09-02 18:24:48,531 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
+2020-09-02 18:28:12,290 ERROR co.coomeva.coonectados.controladores.PrepagadaLiquidacionNuevaController - Error al validar el JSON org.everit.json.schema.ValidationException: #/tipodocumento: expected type: String, found: Integer
