@@ -6,8 +6,6 @@ import java.util.Map;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 
-import co.coomeva.coonectados.modelos.UserVo;
-
 @Service
 public class PrepagadaLiquidacionNuevaImpl implements IPrepagadaLiquidacionNueva {
 	
