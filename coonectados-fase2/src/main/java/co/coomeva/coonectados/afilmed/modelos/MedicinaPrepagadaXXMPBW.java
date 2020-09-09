@@ -4,20 +4,55 @@ import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "XXMPBW")
-public class MedicinaPrepagadaXXMPBW implements Serializable{
+@Table(name = "ASOCIADO_PRUEBA")
+public class MedicinaPrepagadaXXMPBW implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 
 	@Id
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Column(name="QBWCNS")
+	@Column(name="IDENTIFICACION")
+	private Integer identificacion;
+	
+	@Column(name="NOMBRE")
+	private String nombre;
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Integer getIdentificacion() {
+		return identificacion;
+	}
+
+	public void setIdentificacion(Integer identificacion) {
+		this.identificacion = identificacion;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	
+	
+	/*@Column(name="QBWCNS")
 	private Integer consecutivo;
 	
 	@Column(name="QBWSOC")
@@ -347,6 +382,6 @@ public class MedicinaPrepagadaXXMPBW implements Serializable{
 	}
 	public void setTariNueva(String tariNueva) {
 		this.tariNueva = tariNueva;
-	}
+	}*/
 	
 }

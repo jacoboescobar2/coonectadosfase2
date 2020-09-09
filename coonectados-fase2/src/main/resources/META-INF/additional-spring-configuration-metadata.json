@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "db2.datasource.url",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.datasource.url'"
+  },
+  {
+    "name": "db2.datasource.username",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.datasource.username'"
+  },
+  {
+    "name": "db2.datasource.password",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.datasource.password'"
+  },
+  {
+    "name": "db2.datasource.driver-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.datasource.driver-class-name'"
+  },
+  {
+    "name": "db2.jpa.database-platform",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.jpa.database-platform'"
+  },
+  {
+    "name": "db2.jpa.hibernate.use-new-id-generator-mappings",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.jpa.hibernate.use-new-id-generator-mappings'"
+  },
+  {
+    "name": "db2.jpa.hibernate.ddl-auto",
+    "type": "java.lang.String",
+    "description": "A description for 'db2.jpa.hibernate.ddl-auto'"
+  }
+]}
